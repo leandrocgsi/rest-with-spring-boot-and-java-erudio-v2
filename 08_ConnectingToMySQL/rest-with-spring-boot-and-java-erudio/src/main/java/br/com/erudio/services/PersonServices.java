@@ -1,8 +1,6 @@
 package br.com.erudio.services;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
 import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,19 +55,12 @@ public class PersonServices {
 		return repository.save(person);
 	}
 	
-	public void delete(String id) {
+	public void delete(Long id) {
 		
 		logger.info("Deleting one person!");
-	}
-	
-	private Person mockPerson(int i) {
 		
-		Person person = new Person();
-		person.setId(counter.incrementAndGet());
-		person.setFirstName("Person name " + i);
-		person.setLastName("Last name " + i);
-		person.setAddress("Some address in Brasil " + i);
-		person.setGender("Male");
-		return person;
+		var entity = repository.findById(id)
+				.orElseThrow(() -> new ResourceNotFoundException("No records found for this ID!"));
+		repository.delete(entity);
 	}
 }
