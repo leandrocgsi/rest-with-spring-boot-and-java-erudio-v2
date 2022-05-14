@@ -74,7 +74,6 @@ public class PersonController {
 	public PersonVO findById(@PathVariable(value = "id") Long id) {
 		return service.findById(id);
 	}
-	
 
 	@CrossOrigin(origins = {"http://localhost:8080", "https://erudio.com.br"})
 	@PostMapping(
@@ -115,7 +114,6 @@ public class PersonController {
 	public PersonVO update(@RequestBody PersonVO person) {
 		return service.update(person);
 	}
-	
 	
 	@DeleteMapping(value = "/{id}")
 	@Operation(summary = "Deletes a Person",
