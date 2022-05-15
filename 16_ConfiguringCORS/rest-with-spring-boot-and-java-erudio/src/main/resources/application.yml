@@ -1,3 +1,5 @@
+cors:
+  originPatterns: http://localhost:3000,http://localhost:8080,https://erudio.com.br
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
