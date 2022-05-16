@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "c79bae55-7ed6-4a87-a999-d29c1ea98a05",
+		"_postman_id": "aad1680b-68c6-4def-964b-44f83385d44e",
 		"name": "RESTful API with Java 18 and Spring Boot 3",
 		"description": "Some description about your API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -17,6 +17,17 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:3001",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
 							}
 						],
 						"url": {
@@ -192,11 +203,16 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"id\": -115328,\n  \"firstName\": \"amet dolor officia\",\n  \"lastName\": \"eu cupidatat irure veniam officia\",\n  \"address\": \"Ut ut\",\n  \"gender\": \"proident sed commodo dolor exercitation\",\n  \"_links\": {\n    \"ete\": {\n      \"href\": \"ut aliquip Lorem cupidatat\",\n      \"hreflang\": \"Lorem fugiat nulla anim sint\",\n      \"title\": \"ipsum cupidatat\",\n      \"type\": \"eiusmod reprehenderit quis non\",\n      \"deprecation\": \"ut aliquip aliqua elit\",\n      \"profile\": \"velit Ut fugiat ut mollit\",\n      \"name\": \"deserunt velit id laboris\",\n      \"templated\": false\n    },\n    \"occaecat58c\": {\n      \"href\": \"cupidatat cillum\",\n      \"hreflang\": \"aliquip consequat cillum nostrud Lorem\",\n      \"title\": \"enim adipisicing\",\n      \"type\": \"irure deserunt\",\n      \"deprecation\": \"ad eiusmod sunt\",\n      \"profile\": \"reprehenderit dolor\",\n      \"name\": \"ad sunt\",\n      \"templated\": true\n    }\n  }\n}",
+							"raw": "{\n    \"id\": 17,\n    \"firstName\": \"Carrie\",\n    \"lastName\": \"Fisher\",\n    \"address\": \"Los Angeles, California, US\",\n    \"gender\": \"Female\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -421,11 +437,21 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:8080",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"id\": -115328,\n  \"firstName\": \"amet dolor officia\",\n  \"lastName\": \"eu cupidatat irure veniam officia\",\n  \"address\": \"Ut ut\",\n  \"gender\": \"proident sed commodo dolor exercitation\",\n  \"_links\": {\n    \"ete\": {\n      \"href\": \"ut aliquip Lorem cupidatat\",\n      \"hreflang\": \"Lorem fugiat nulla anim sint\",\n      \"title\": \"ipsum cupidatat\",\n      \"type\": \"eiusmod reprehenderit quis non\",\n      \"deprecation\": \"ut aliquip aliqua elit\",\n      \"profile\": \"velit Ut fugiat ut mollit\",\n      \"name\": \"deserunt velit id laboris\",\n      \"templated\": false\n    },\n    \"occaecat58c\": {\n      \"href\": \"cupidatat cillum\",\n      \"hreflang\": \"aliquip consequat cillum nostrud Lorem\",\n      \"title\": \"enim adipisicing\",\n      \"type\": \"irure deserunt\",\n      \"deprecation\": \"ad eiusmod sunt\",\n      \"profile\": \"reprehenderit dolor\",\n      \"name\": \"ad sunt\",\n      \"templated\": true\n    }\n  }\n}",
+							"raw": "{\n  \"firstName\": \"Carrie\",\n  \"lastName\": \"Fisher\",\n  \"address\": \"Los Angeles sdfgdgfdgfdgfd, California, US\",\n  \"gender\": \"Female\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -608,10 +634,26 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "https://erudio.com.br",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:8080",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/person/v1/:id",
+							"raw": "{{baseUrl}}/api/person/v1/17",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -619,14 +661,7 @@
 								"api",
 								"person",
 								"v1",
-								":id"
-							],
-							"variable": [
-								{
-									"key": "id",
-									"value": "72921194",
-									"description": "(Required) "
-								}
+								"17"
 							]
 						},
 						"description": "Finds a Person"
@@ -860,9 +895,15 @@
 					"name": "Deletes a Person",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "{{baseUrl}}/api/person/v1/:id",
+							"raw": "{{baseUrl}}/api/person/v1/17",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -870,13 +911,13 @@
 								"api",
 								"person",
 								"v1",
-								":id"
+								"17"
 							],
-							"variable": [
+							"query": [
 								{
-									"key": "id",
-									"value": "72921194",
-									"description": "(Required) "
+									"key": "Autho",
+									"value": null,
+									"disabled": true
 								}
 							]
 						},
@@ -1083,6 +1124,11 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
 							}
 						],
 						"url": {
@@ -1258,6 +1304,11 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -1487,6 +1538,11 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
 							}
 						],
 						"body": {
@@ -1674,6 +1730,11 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
 							}
 						],
 						"url": {
@@ -1926,7 +1987,13 @@
 					"name": "Deletes a Book",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "{{baseUrl}}/api/book/v1/:id",
 							"host": [
@@ -2133,6 +2200,199 @@
 							],
 							"cookie": [],
 							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "Authenticates a user and returns a token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if(responseCode.code >= 200 && responseCode.code <= 299) {\r",
+									"    var jsonData = JSON.parse(responseBody);\r",
+									"\r",
+									"    postman.setEnvironmentVariable('accessToken', jsonData.accessToken);\r",
+									"    postman.setEnvironmentVariable('refreshToken', jsonData.refreshToken);\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"{{username}}\",\n  \"password\": \"{{password}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/signin",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"username\": \"Excepteur eu ad\",\n  \"password\": \"elit nisi\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/auth/signin",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"signin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "exe"
+						}
+					]
+				},
+				{
+					"name": "Refresh token for authenticated user and returns a token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if(responseCode.code >= 200 && responseCode.code <= 299) {\r",
+									"    var jsonData = JSON.parse(responseBody);\r",
+									"\r",
+									"    postman.setEnvironmentVariable('accessToken', jsonData.accessToken);\r",
+									"    postman.setEnvironmentVariable('refreshToken', jsonData.refreshToken);\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*",
+								"disabled": true
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{refreshToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"{{username}}\",\n  \"password\": \"{{password}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/refresh/{{username}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"refresh",
+								"{{username}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"username\": \"Excepteur eu ad\",\n  \"password\": \"elit nisi\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/auth/signin",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"signin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "exe"
 						}
 					]
 				}
