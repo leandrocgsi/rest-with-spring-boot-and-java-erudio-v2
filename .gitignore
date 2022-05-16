@@ -16,6 +16,9 @@
 *.war
 *.ear
 
+# Merge Files
+*.bak
+
 #Gradle temporary files
 target/
 
