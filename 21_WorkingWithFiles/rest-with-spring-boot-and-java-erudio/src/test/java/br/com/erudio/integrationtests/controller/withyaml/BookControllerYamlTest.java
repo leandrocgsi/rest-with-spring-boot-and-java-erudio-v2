@@ -237,7 +237,7 @@ public class BookControllerYamlTest extends AbstractIntegrationTest {
         assertNotNull(foundBookOne.getAuthor());
         assertNotNull(foundBookOne.getPrice());
         assertTrue(foundBookOne.getId() > 0);
-        assertEquals("Big Data: como extrair volume, variedade, velocidade e valor da avalanche de informação cotidiana", foundBookOne.getTitle());
+        assertEquals("Big Data: como extrair volume, variedade, velocidade e valor da avalanche de informaÃ§Ã£o cotidiana", foundBookOne.getTitle());
         assertEquals("Viktor Mayer-Schonberger e Kenneth Kukier", foundBookOne.getAuthor());
         assertEquals(54.00, foundBookOne.getPrice());
         
