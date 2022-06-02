@@ -90,5 +90,4 @@ public class PersonRepositoryTest extends AbstractIntegrationTest {
 		assertEquals("São Paulo", person.getAddress());
 		assertEquals("Male", person.getGender());
 	}
-
 }

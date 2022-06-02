@@ -243,7 +243,7 @@ public class BookControllerXmlTest extends AbstractIntegrationTest {
 			.then()
 				.statusCode(403);
 	}
-
+	
 	@Test
 	@Order(7)
 	public void testHATEOAS() throws JsonMappingException, JsonProcessingException {

@@ -253,7 +253,6 @@ public class BookControllerYamlTest extends AbstractIntegrationTest {
         assertEquals(92.00, foundBookFive.getPrice());
     }
      
-	
 	@Test
 	@Order(9)
 	public void testHATEOAS() throws JsonMappingException, JsonProcessingException {
