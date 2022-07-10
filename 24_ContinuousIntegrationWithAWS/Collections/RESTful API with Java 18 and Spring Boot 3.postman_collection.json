@@ -425,7 +425,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 17,\n    \"firstName\": \"Carrie\",\n    \"lastName\": \"Fisher\",\n    \"address\": \"Los Angeles, California, US\",\n    \"gender\": \"Female\"\n}",
+							"raw": "{\n    \"id\": 1016,\n    \"firstName\": \"Carrie\",\n    \"lastName\": \"Fisher\",\n    \"address\": \"Los Angeles, California, US\",\n    \"gender\": \"Female\",\n    \"enabled\": true\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -664,7 +664,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"firstName\": \"Carrie\",\n  \"lastName\": \"Fisher\",\n  \"address\": \"Los Angeles sdfgdgfdgfdgfd, California, US\",\n  \"gender\": \"Female\"\n}",
+							"raw": "{\n  \"firstName\": \"Carrie\",\n  \"lastName\": \"Fisher\",\n  \"address\": \"Los Angeles sdfgdgfdgfdgfd, California, US\",\n  \"gender\": \"Female\",\n  \"enabled\": true\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -866,7 +866,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/person/v1/23",
+							"raw": "{{baseUrl}}/api/person/v1/523",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -874,7 +874,7 @@
 								"api",
 								"person",
 								"v1",
-								"23"
+								"523"
 							]
 						},
 						"description": "Finds a Person"
@@ -1382,7 +1382,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/person/v1/17",
+							"raw": "{{baseUrl}}/api/person/v1/1016",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -1390,7 +1390,7 @@
 								"api",
 								"person",
 								"v1",
-								"17"
+								"1016"
 							],
 							"query": [
 								{
@@ -1607,6 +1607,16 @@
 							{
 								"key": "Authorization",
 								"value": "Bearer {{accessToken}}",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/x-yaml",
 								"type": "text"
 							}
 						],
