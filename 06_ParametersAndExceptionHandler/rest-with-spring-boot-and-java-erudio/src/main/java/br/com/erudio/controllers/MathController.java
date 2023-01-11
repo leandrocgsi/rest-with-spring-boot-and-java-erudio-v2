@@ -1,7 +1,5 @@
 package br.com.erudio.controllers;
 
-import java.util.concurrent.atomic.AtomicLong;
-
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -13,9 +11,7 @@ import br.com.erudio.math.SimpleMath;
 
 @RestController
 public class MathController {
-	
-	private final AtomicLong counter = new AtomicLong();
-	
+		
 	private SimpleMath math = new SimpleMath();
 	
 	@RequestMapping(value = "/sum/{numberOne}/{numberTwo}",
