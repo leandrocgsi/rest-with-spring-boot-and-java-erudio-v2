@@ -9,21 +9,21 @@ import io.swagger.v3.oas.models.info.License;
 
 @Configuration
 public class OpenApiCOnfig {
-	
-	@Bean
-	public OpenAPI customOpenAPI() {
-		return new OpenAPI()
-			.info(new Info()
-				.title("RESTful API with Java 18 and Spring Boot 3")
-				.version("v1")
-				.description("Some description about your API")
-				.termsOfService("https://pub.erudio.com.br/meus-cursos")
-				.license(
-					new License()
-						.name("Apache 2.0")
-						.url("https://pub.erudio.com.br/meus-cursos")
-					)
-				);
-	}
+
+    @Bean
+    OpenAPI customOpenAPI() {
+        return new OpenAPI()
+                .info(new Info()
+                        .title("RESTful API with Java 19 and Spring Boot 3.0.1")
+                        .version("v1")
+                        .description("Some description about your API")
+                        .termsOfService("https://pub.erudio.com.br/meus-cursos")
+                        .license(
+                                new License()
+                                        .name("Apache 2.0")
+                                        .url("https://pub.erudio.com.br/meus-cursos")
+                        )
+                );
+    }
 
 }
