@@ -37,6 +37,9 @@ Este é o repositório dos codigos fonte desenvolvidos no curso [REST API's REST
 * [Entendendo HATEOAS](http://www.semeru.com.br/blog/entendendo_hateoas/)
 * [Aplicações RESTful HATEOAS com SpringBoot](http://www.semeru.com.br/blog/aplicacoes-restfull-hateoas-com-springboot/)
 
+# Prévia Gratuita
+
+[![Prévia Gratuita](https://img.youtube.com/vi/fQAOaMqu0ho/0.jpg)](https://www.youtube.com/watch?v=fQAOaMqu0ho)
 
 # HTTP Status Codes adotados pelas API's mais famosas do mundo
 
