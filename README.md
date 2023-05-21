@@ -8,6 +8,13 @@
 
 Este é o repositório dos codigos fonte desenvolvidos no curso [REST API's RESTFul do 0 à AWS com Spring Boot 3, Java e Docker](https://www.udemy.com/course/restful-apis-do-0-a-nuvem-com-springboot-e-docker/?couponCode=GTHB_FLASH_SALE2021)
 
+
+
+# Prévia Gratuita
+
+[![Prévia Gratuita](https://img.youtube.com/vi/fQAOaMqu0ho/0.jpg)](https://www.youtube.com/watch?v=fQAOaMqu0ho)
+
+# Preparação do Ambiente
 # Cursos Relacionados
 
 [![Image](https://github.com/leandrocgsi/RestWithSpringBootUdemy/blob/master/Images/docker_do_zero_a_maestria_conteinerizacao_desmistificada.png?raw=true "Docker do Zero à Maestria - Contêinerização Desmistificada")](https://www.udemy.com/course/docker-do-zero-a-maestria-conteinerizacao-desmistificada/?couponCode=GTHB_FLASH_SALE2021)
