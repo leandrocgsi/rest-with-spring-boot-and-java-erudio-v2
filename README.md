@@ -15,6 +15,10 @@ Este é o repositório dos codigos fonte desenvolvidos no curso [REST API's REST
 
 # Preparação do Ambiente
 
+## [Configuração do Ambiente de Desenvolvimento Spring Boot e Java no Windows](https://www.youtube.com/watch?v=sdY-N6nnyaE)
+
+[![Montando um Ambiente de Desenvolvimento Spring Boot e Java no Windows: Minicurso Gratuito Completo!](https://raw.githubusercontent.com/leandrocgsi/RestWithSpringBootUdemy/master/Images/cover/windows.png)](https://www.youtube.com/watch?v=sdY-N6nnyaE)
+
 
 
 # Cursos Relacionados
