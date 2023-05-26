@@ -9,10 +9,9 @@
 Este é o repositório dos codigos fonte desenvolvidos no curso [REST API's RESTFul do 0 à AWS com Spring Boot 3, Java e Docker](https://www.udemy.com/course/restful-apis-do-0-a-nuvem-com-springboot-e-docker/?couponCode=GTHB_FLASH_SALE2021)
 
 
-
 # Prévia Gratuita
 
-[![Prévia Gratuita](https://img.youtube.com/vi/fQAOaMqu0ho/0.jpg)](https://www.youtube.com/watch?v=fQAOaMqu0ho)
+[![Prévia Gratuita](https://raw.githubusercontent.com/leandrocgsi/RestWithSpringBootUdemy/master/Images/cover/java_cover.png)](https://www.youtube.com/watch?v=fQAOaMqu0ho)
 
 # Preparação do Ambiente
 ## [Configuração do Ambiente de Desenvolvimento Spring Boot e Java no Windows](https://www.youtube.com/watch?v=sdY-N6nnyaE)
