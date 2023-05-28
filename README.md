@@ -20,6 +20,7 @@ Este é o repositório dos codigos fonte desenvolvidos no curso [REST API's REST
 ## [Configuração do Ambiente de Desenvolvimento Spring Boot e Java no Linux (Ubuntu/Debian)](https://www.youtube.com/watch?v=dEszOKOR4Nk)
 
 [![Montando um Ambiente de Desenvolvimento Spring Boot e Java no Linux: Minicurso Gratuito Completo!](https://raw.githubusercontent.com/leandrocgsi/RestWithSpringBootUdemy/master/Images/cover/linux.png)](https://www.youtube.com/watch?v=dEszOKOR4Nk)
+
 # Cursos Relacionados
 
 [![Image](https://github.com/leandrocgsi/RestWithSpringBootUdemy/blob/master/Images/docker_do_zero_a_maestria_conteinerizacao_desmistificada.png?raw=true "Docker do Zero à Maestria - Contêinerização Desmistificada")](https://www.udemy.com/course/docker-do-zero-a-maestria-conteinerizacao-desmistificada/?couponCode=GTHB_FLASH_SALE2021)
