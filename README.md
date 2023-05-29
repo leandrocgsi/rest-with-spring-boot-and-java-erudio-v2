@@ -11,9 +11,7 @@ Este é o repositório dos codigos fonte desenvolvidos no curso [REST API's REST
 
 # Prévia Gratuita
 
-[![Prévia Gratuita](https://img.youtube.com/vi/fQAOaMqu0ho/0.jpg)](https://www.youtube.com/watch?v=fQAOaMqu0ho)
-
-# Preparação do Ambiente
+[![Prévia Gratuita](https://raw.githubusercontent.com/leandrocgsi/RestWithSpringBootUdemy/master/Images/cover/java_cover.png)](https://www.youtube.com/watch?v=fQAOaMqu0ho)
 
 ## [Configuração do Ambiente de Desenvolvimento Spring Boot e Java no Windows](https://www.youtube.com/watch?v=sdY-N6nnyaE)
 
