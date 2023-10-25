@@ -9,6 +9,8 @@ public class Message implements Serializable{
     private String role;
     private String content;//prompt
     
+    public Message() {}
+    
     public Message(String role, String content) {
         this.role = role;
         this.content = content;
