@@ -17,7 +17,7 @@ public class ChatGPTController {
     
     // HOST/bot/chat
     @GetMapping("/chat")
-    public Object chat(@RequestParam("prompt") String prompt) {
+    public String chat(@RequestParam("prompt") String prompt) {// throws JsonProcessingException {
         return service.chat(prompt);
     }
 
