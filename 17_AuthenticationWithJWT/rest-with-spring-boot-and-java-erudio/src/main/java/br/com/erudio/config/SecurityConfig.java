@@ -56,8 +56,6 @@ public class SecurityConfig {
         return http
             .httpBasic(basic -> basic.disable())
             .csrf(csrf -> csrf.disable())
-            // .httpBasic(HttpBasicConfigurer::disable)
-            // .csrf(AbstractHttpConfigurer::disable)
             .addFilterBefore(customFilter, UsernamePasswordAuthenticationFilter.class)
                 .sessionManagement(
             		session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
@@ -73,16 +71,7 @@ public class SecurityConfig {
                         .requestMatchers("/users").denyAll()
                 )
             .cors(cors -> {})
-            //.apply(new JwtConfigurer().)
-            
                 .build();
         //@formatter:on
     }
- 
-    /*
-    @Bean
-    JwtConfigurer jwtConfigurer() {
-        return new JwtConfigurer(tokenProvider);
-    }
-    */
 }
